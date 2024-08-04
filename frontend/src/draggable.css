@@ -1,0 +1,31 @@
+/* src/draggable.css */
+.draggable-node {
+  cursor: grab;
+  min-width: 100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #1C2536;
+  color: #ffffff;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.draggable-node:hover {
+  background-color: #2c3e50;
+  transform: scale(1.05);
+}
+
+.draggable-node:active {
+  cursor: grabbing;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.draggable-node span {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #ecf0f1;
+}
